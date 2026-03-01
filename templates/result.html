@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Result - PlantCare AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <div class="logo">🌱 PlantCare AI</div>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/upload" class="btn">New Analysis</a>
+    </div>
+</nav>
+
+<section class="result-container">
+
+    <h1>Analysis Complete</h1>
+    <p class="subtitle">Here’s what we found</p>
+
+    <div class="result-grid">
+
+        <!-- LEFT IMAGE -->
+        <div class="image-card">
+            <h4>Uploaded Image</h4>
+            <img src="{{ url_for('static', filename=image_path) }}">
+        </div>
+
+        <!-- RIGHT INFO CARD -->
+        <div class="info-card">
+
+            {% if "healthy" in prediction.lower() %}
+                <div class="status healthy-status">✔ HEALTHY PLANT</div>
+                <div class="icon-circle healthy-icon">✔</div>
+            {% else %}
+                <div class="status disease-status">⚠ DISEASE DETECTED</div>
+                <div class="icon-circle disease-icon">✖</div>
+            {% endif %}
+
+            <div class="plant-type">
+                {{ prediction.split("___")[0].replace("_", " ") }}
+            </div>
+
+            <div class="condition">
+                {{ prediction.split("___")[1].replace("_", " ") }}
+            </div>
+
+            <div class="confidence-box">
+                Confidence: {{ confidence }}%
+            </div>
+
+            {% if "healthy" not in prediction.lower() %}
+            <div class="recommend-box">
+                <h4>Recommended Actions</h4>
+                <ul>
+                    <li>• Remove affected leaves to prevent spread</li>
+                    <li>• Apply recommended fungicide</li>
+                    <li>• Ensure proper sunlight & airflow</li>
+                    <li>• Monitor plant regularly</li>
+                </ul>
+            </div>
+            {% else %}
+            <div class="recommend-box healthy-recommend">
+                <h4>Keep Your Plant Healthy</h4>
+                <ul>
+                    <li>• Continue regular watering</li>
+                    <li>• Ensure adequate sunlight</li>
+                    <li>• Maintain good air circulation</li>
+                    <li>• Monitor for changes</li>
+                </ul>
+            </div>
+            {% endif %}
+
+        </div>
+
+    </div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="result-actions">
+        <a href="/upload" class="primary-btn">Analyze Another Image</a>
+        <a href="/" class="secondary-btn">Back to Home</a>
+    </div>
+
+</section>
+
+</body>
+</html>

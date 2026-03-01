@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PlantCare AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <div class="logo">🌱 PlantCare AI</div>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/upload" class="btn">Get Started</a>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+    <div class="hero-left">
+        <h1>
+            AI-Powered<br>
+            <span>Plant Disease Detection</span>
+        </h1>
+        <p>
+            Protect your crops with cutting-edge artificial intelligence.
+            Instant disease identification for healthier plants and better yields.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="/upload" class="primary-btn">Upload Image</a>
+            <a href="/about" class="secondary-btn">Learn More</a>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <img src="{{ url_for('static', filename='images/hero.jpg') }}">
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <h2>Why Choose PlantCare AI?</h2>
+
+    <div class="feature-cards">
+        <div class="feature-card">
+            <h4>Instant Detection</h4>
+            <p>Get results in seconds with our advanced AI model trained on thousands of plant images.</p>
+        </div>
+
+        <div class="feature-card">
+            <h4>High Accuracy</h4>
+            <p>Powered by EfficientNet architecture achieving strong validation performance.</p>
+        </div>
+
+        <div class="feature-card">
+            <h4>Easy to Use</h4>
+            <p>Simply upload a plant image and get instant diagnosis — no technical expertise required.</p>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+    <div>38+ <span>Plant Diseases</span></div>
+    <div>90%+ <span>Accuracy Rate</span></div>
+    <div>10+ <span>Plant Types</span></div>
+    <div>24/7 <span>Available</span></div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Ready to Protect Your Plants?</h2>
+    <p>Start detecting plant diseases now with our AI-powered system</p>
+    <a href="/upload" class="cta-btn">Get Started Now</a>
+</section>
+
+<!-- FOOTER -->
+<section class="footer">
+    <h4>About Plant Disease Detection System</h4>
+    <p>
+        Our advanced AI-powered platform utilizes transfer learning to accurately identify
+        plant diseases in real-time.
+    </p>
+    <p class="copyright">
+        © 2026 Plant Care AI. All rights reserved.
+    </p>
+</section>
+
+</body>
+</html>

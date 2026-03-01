@@ -1,0 +1,567 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.btn {
+    padding: 8px 15px;
+    background: #22c55e;
+    color: white;
+    border-radius: 5px;
+}
+
+.hero {
+    padding: 80px 40px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+}
+
+.hero-text span {
+    color: #22c55e;
+}
+
+.primary-btn {
+    padding: 10px 20px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.secondary-btn {
+    padding: 10px 20px;
+    border: 1px solid #22c55e;
+    color: #22c55e;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.upload-section {
+    padding: 60px 40px;
+}
+
+.upload-section h1 {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    margin-bottom: 15px;
+}
+
+
+.result-section {
+    padding: 60px 40px;
+}
+
+.result-card {
+    background: white;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.healthy {
+    color: green;
+    font-weight: bold;
+}
+
+.disease {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+.result-container {
+    padding: 60px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.analysis-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    max-width: 900px;
+    margin: auto;
+}
+
+.image-box img {
+    width: 320px;
+    border-radius: 12px;
+}
+
+.info-box {
+    text-align: left;
+}
+
+.status {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.healthy-badge {
+    color: #16a34a;
+}
+
+.disease-badge {
+    color: #dc2626;
+}
+
+.plant-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.confidence {
+    font-size: 18px;
+    color: #444;
+}
+
+.about-hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about-hero p {
+    color: #555;
+}
+
+.mission-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    gap: 40px;
+}
+
+.mission-text {
+    max-width: 600px;
+}
+
+.mission-icon {
+    font-size: 120px;
+    background: #d1fae5;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.how-it-works {
+    text-align: center;
+    padding: 60px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.step {
+    max-width: 220px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background: #22c55e;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.model-section {
+    background: #f9fafb;
+    padding: 60px;
+    text-align: center;
+}
+
+.model-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.model-card {
+    background: white;
+    padding: 25px;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+}
+
+.hero-left {
+    max-width: 500px;
+}
+
+.hero-left h1 {
+    font-size: 42px;
+}
+
+.hero-left span {
+    color: #22c55e;
+}
+
+.hero-left p {
+    margin: 20px 0;
+    color: #555;
+}
+
+.hero-buttons a {
+    margin-right: 10px;
+}
+
+.hero-right img {
+    width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.features {
+    text-align: center;
+    padding: 60px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    width: 260px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background: #f3f4f6;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.stats span {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    color: #555;
+}
+
+.cta {
+    background: #16a34a;
+    color: white;
+    text-align: center;
+    padding: 60px;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: white;
+    color: #16a34a;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer {
+    padding: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer p {
+    color: #555;
+}
+
+.benefits-section {
+    padding: 60px;
+    text-align: center;
+}
+
+.benefit-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.benefit-card {
+    background: white;
+    padding: 25px;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.benefit-card .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.try-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.about-footer {
+    padding: 50px;
+    background: #f9fafb;
+    text-align: center;
+}
+
+.about-footer p {
+    color: #555;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+.upload-container {
+    text-align: center;
+    padding: 70px;
+}
+
+.upload-container h1 {
+    font-size: 32px;
+}
+
+.upload-container .subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.drop-zone {
+    border: 2px dashed #cbd5e1;
+    padding: 50px;
+    border-radius: 15px;
+    width: 450px;
+    margin: 0 auto;
+    background: #f9fafb;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.drop-zone.dragover {
+    border-color: #22c55e;
+    background: #f0fdf4;
+}
+
+.upload-icon {
+    font-size: 40px;
+    color: #22c55e;
+    margin-bottom: 10px;
+}
+
+.choose-btn {
+    margin-top: 15px;
+    padding: 8px 18px;
+    background: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.analyze-btn {
+    margin-top: 20px;
+}
+
+.tips-card {
+    margin-top: 40px;
+    padding: 25px;
+    background: white;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.tips-card ul {
+    text-align: left;
+    padding-left: 0;
+    list-style: none;
+}
+
+.tips-card li {
+    margin: 8px 0;
+    color: #555;
+}
+
+.browse-text {
+    margin: 10px 0;
+    color: #666;
+}
+
+.choose-btn {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.file-name {
+    margin-top: 15px;
+    color: #22c55e;
+    font-weight: 500;
+}
+.image-preview {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.result-container {
+    padding: 60px;
+    text-align: center;
+}
+
+.result-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+
+.image-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.image-card img {
+    width: 320px;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    width: 350px;
+}
+
+.status {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.healthy-status {
+    color: #16a34a;
+}
+
+.disease-status {
+    color: #dc2626;
+}
+
+.icon-circle {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.healthy-icon {
+    color: #16a34a;
+}
+
+.disease-icon {
+    color: #dc2626;
+}
+
+.plant-type {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.condition {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.confidence-box {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.recommend-box {
+    text-align: left;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fee2e2;
+}
+
+.healthy-recommend {
+    background: #dcfce7;
+}
+
+.recommend-box ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.result-actions {
+    margin-top: 30px;
+}
+
+.result-actions a {
+    margin: 0 10px;
+}

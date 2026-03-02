@@ -39,7 +39,7 @@ def predict_image(img_path):
     img_array = preprocess_input(img_array)
     img_array = np.expand_dims(img_array, axis=0)
 
-    prediction = model.predict(img_array)
+    prediction = model(img_array, training=False).numpy()
 
     predicted_index = np.argmax(prediction, axis=1)[0]
     confidence = float(np.max(prediction)) * 100
@@ -112,4 +112,5 @@ def result():
 
 
 if __name__ == "__main__":
+
     app.run(host="0.0.0.0", port=5000)

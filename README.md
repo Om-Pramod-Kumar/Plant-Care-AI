@@ -18,9 +18,6 @@
 👉 https://omkumar04-plant-care-ai.hf.space
 
 ---
-## 🎥 Project Demo 
-
-👉 [view live project](https://omkumar04-plant-care-ai.hf.space/)
 
 ## 🚀 Overview
 
